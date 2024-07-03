@@ -1,8 +1,8 @@
 # VK Absolute Date Fix
 
-This userscript changes relative time to absolute time in wall posts on VK.com. Instead of seeing "сегодня в 5:56" or "вчера в 10:33", you'll see a precise date and time like "2024-07-03 05:56".
+This userscript changes relative time to absolute time in wall posts on VK.com. Instead of seeing "сегодня в 5:56" or "вчера в 10:33", you'll see a precise date and time like "2024-07-03 (05:56)".
 
-(RU) Этот скрипт изменяет относительное время на абсолютное в записях на стене VK.com. Вместо "сегодня в 5:56" или "вчера в 10:33" вы увидите точную дату и время, например, "2024-07-03 05:56". 
+(RU) Этот скрипт изменяет относительное время на абсолютное в записях на стене VK.com. Вместо "сегодня в 5:56" или "вчера в 10:33" вы увидите точную дату и время, например, "2024-07-03 (05:56)". 
 
 ## Installation
 
