@@ -29,6 +29,7 @@ Once you have installed Tampermonkey and added the script, it will automatically
 - The script handles various Russian date formats, including "сегодня", "вчера", and specific dates like "1 июл в 22:53".
 - If you encounter any issues or have suggestions, feel free to open an issue on the GitHub repository.
 - This script only works if you use russian language at VK.com. May change later, but it is unlikely.
+- This script only changes wall posts, comments are unaffected, I find that unnecessary.
 
 ## License
 
