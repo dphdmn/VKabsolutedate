@@ -72,7 +72,7 @@
         }
 
         // Select all elements with the specified class and first child span
-        const elements = document.querySelectorAll(".PostHeaderSubtitle__item span.rel_date, .PostHeaderSubtitle__item");
+        const elements = document.querySelectorAll(".PostHeaderSubtitle__item span.rel_date, time[class=PostHeaderSubtitle__item]");
         let replacedCount = 0;
         console.log(`[absolute time fix script] Script triggered, found ${elements.length} elements`);
 
