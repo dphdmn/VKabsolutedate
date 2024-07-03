@@ -30,6 +30,7 @@ Once you have installed Tampermonkey and added the script, it will automatically
 - If you encounter any issues or have suggestions, feel free to open an issue on the GitHub repository.
 - This script only works if you use russian language at VK.com. May change later, but it is unlikely.
 - This script only changes wall posts, comments are unaffected, I find that unnecessary.
+- Old posts (from previous year) are unaffected, since there is no exact time accessible anymore without API requests. Consider using something like [this](https://github.com/dphdmn/downloadWallVK) for old posts if you can afford downloading everything, or use some different approach using VK API.
 
 ## License
 
