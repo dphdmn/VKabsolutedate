@@ -58,33 +58,33 @@
     }
 
     function updateTimeText() {
+        // Helper function to parse and format date
+        function updateElementText(element, dateString) {
+            const parsedDate = parseRussianDate(dateString);
+            if (parsedDate) {
+                const formattedDate = formatDateTime(parsedDate);
+                if (element.textContent !== formattedDate) {
+                    element.textContent = formattedDate;
+                    return true;
+                }
+            }
+            return false;
+        }
+
         // Select all elements with the specified class and first child span
         const elements = document.querySelectorAll(".PostHeaderSubtitle__item span.rel_date, .PostHeaderSubtitle__item");
         let replacedCount = 0;
         console.log(`[absolute time fix script] Script triggered, found ${elements.length} elements`);
+
         elements.forEach(element => {
-            const absTime = element.getAttribute("time");
-
-            // Handle elements with time attribute
-            if (absTime) {
-                const date = new Date(absTime * 1000); // Convert to milliseconds
-                const formattedDate = formatDateTime(date);
-
-                if (element.textContent !== formattedDate) {
-                    element.textContent = formattedDate;
+            const absTimeString = element.getAttribute("abs_time");
+            if (absTimeString) {
+                if (updateElementText(element, absTimeString)) {
                     replacedCount++;
                 }
-            }
-            // Handle elements with Russian date strings
-            else if (element.textContent) {
-                const dateString = element.textContent.trim();
-                const parsedDate = parseRussianDate(dateString);
-                if (parsedDate) {
-                    const formattedDate = formatDateTime(parsedDate);
-                    if (element.textContent !== formattedDate) {
-                        element.textContent = formattedDate;
-                        replacedCount++;
-                    }
+            } else if (element.textContent) {
+                if (updateElementText(element, element.textContent.trim())) {
+                    replacedCount++;
                 }
             }
         });
