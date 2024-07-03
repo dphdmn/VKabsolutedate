@@ -14,7 +14,7 @@ This userscript changes relative time to absolute time in wall posts on VK.com. 
 
 ## How it Works
 
-This script automatically converts relative time indicators in VK.com posts into absolute dates and times in the format `YYYY-MM-DD HH:mm`.
+This script automatically converts relative time indicators in VK.com posts into absolute dates and times in the format `YYYY-MM-DD (HH:mm)`.
 
 ## Example
 
